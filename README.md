@@ -1,13 +1,23 @@
 # smb_scan
 
-usage: python3 smb_scan.py <TARGET_IP> [--port TARGET_PORT] [--username USERNAME] [--password PASSWORD]
+A tool to scan a target system for SMB vulnerabilities.
 
-Scan target system for SMB vulnerabilities.
+## Usage
 
-positional arguments:
-  ip                   IP address of the target to check for SMB vulnerabilities.
+python3 smb_scan.py <TARGET_IP> [--port TARGET_PORT] [--username USERNAME] [--password PASSWORD]
 
-options:
-  --port PORT          Port to use for SMB (default is 445).
-  --username USERNAME  Port to use for SMB (default is '').
-  --password PASSWORD  Port to use for SMB (default is '').
+### Positional arguments:
+
+- TARGET_IP  
+  The IP address of the target system to check for SMB vulnerabilities.
+
+### Optional arguments:
+
+- --port PORT  
+  The port to use for SMB. (Default: 445)
+
+- --username USERNAME  
+  The username for authentication. (Default: "")
+
+- --password PASSWORD  
+  The password for authentication. (Default: "")
