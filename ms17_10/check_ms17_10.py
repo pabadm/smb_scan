@@ -1,10 +1,4 @@
-#!/usr/bin/env python
-import argparse
-import re
-import sys
-
 from .mysmb import MYSMB
-
 
 '''
 Script for
@@ -13,8 +7,6 @@ Script for
 '''
 
 def check_ms17_10(target_ip, port, username, password):
-    delimiter = '*' * 30
-
     connection = MYSMB(target_ip, int(port))
     connection.login_or_fail(username, password)
 
